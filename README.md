@@ -1,36 +1,90 @@
-<h1 align="center">
-  Solana Project Template
-</h1>
-<p align="center">
-  A template for vanilla Solana programs and their clients.
-</p>
-<p align="center">
-  <img width="600" alt="Solana Project Template" src="https://github.com/metaplex-foundation/solana-project-template/assets/729235/aebf053a-d6fa-440b-9766-8957e843ec86" />
-</p>
-<p align="center">
-  <a href="https://github.com/metaplex-foundation/solana-project-template/actions/workflows/main.yml"><img src="https://img.shields.io/github/actions/workflow/status/metaplex-foundation/solana-project-template/main.yml?logo=GitHub" /></a>
-</p>
+# Unipay-Card Solana
+
+This repository contains the Solana implementation of the **Unipay Card** smart contract. The contract enables users to collateralize SOL to obtain a credit limit, allowing them to open a virtual credit card and add credit for real-world spending.
+
+<img width="1305" alt="Screenshot 2024-09-30 at 11 12 36" src="https://github.com/user-attachments/assets/0e9d5f80-214f-4948-9b83-170f90b9c786">
+
+
+## Overview
+
+Unipay Card on Solana provides a decentralized solution for users to leverage their SOL holdings to access credit. By staking SOL, users can:
+
+- **Obtain an Initial Credit Limit**: Collateralize your SOL to receive a starting credit line.
+- **Open a Virtual Credit Card**: Use your credit line to open a Unipay virtual credit card for everyday purchases.
+- **Improve Credit Score**: Enhance your creditworthiness through timely repayments and honest on-chain activity.
+- **Access Unsecured Lending**: Eventually unlock unsecured borrowing limits without needing additional collateral.
 
 ## Features
 
-- **Generate IDLs** using [Shank](https://github.com/metaplex-foundation/shank)
-- **Generate clients** for one or more programs using [Kinobi](https://github.com/metaplex-foundation/kinobi)
-- Configure **local validators** using [Amman](https://github.com/metaplex-foundation/amman)
-- **Build, test and lint** programs and clients using GitHub Actions.
-- **Publish** your [Umi](https://github.com/metaplex-foundation/umi) JavaScript client and its TypeScript documentation by dispatching a GitHub workflow.
-- **Publish** your Rust client SDK to [crates.io](https://crates.io) by dispatching a GitHub workflow.
+- **Collateralized Lending**: Stake your SOL to receive a credit limit on your Unipay virtual credit card.
+- **Progressive Unsecured Lending**: Increase your credit score to access unsecured credit lines over time.
+- **Credit Scoring System**: Our algorithm evaluates your on-chain behavior to adjust your credit limit.
+- **Real-World Spending**: Bridge the gap between crypto assets and everyday expenses with seamless integration.
 
-## Getting started
+## Getting Started
 
-1. [Use this template](https://github.com/new?template_name=solana-project-template&template_owner=metaplex-foundation) to create a new repository.
-2. Open the `init.sh` script and update the following variables.
-   ```sh
-   NAME="mpl-project-name"
-   DESCRIPTION="My project description"
-   PUBLIC_KEY="MyProgram1111111111111111111111111111111111"
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/yourusername/unipay-card-solana.git
+   cd unipay-card-solana
    ```
-3. Run the `init.sh` script to initialize the project. This will find/replace the variable above, rename some files/folders, update the README and, finally, remove the `init.sh` script.
-   ```sh
-   ./init.sh
+
+2. **Install Dependencies**
+
+   Ensure you have the necessary tools and dependencies installed for Solana smart contract development.
+
+3. **Build the Contract**
+
+   ```bash
+   # Replace with your build commands
+   cargo build-bpf
    ```
-4. [Read the `CONTRIBUTING.md` file](./CONTRIBUTING.md) to learn more about how to use the project.
+
+4. **Deploy to Solana Network**
+
+   ```bash
+   # Replace with your deployment commands
+   solana program deploy ./target/deploy/unipay_card_solana.so
+   ```
+
+5. **Interact with the Contract**
+
+   Use the Unipay dashboard or command-line tools to interact with the deployed contract.
+
+## Usage
+
+- **Collateralize SOL**
+
+  Stake your SOL through the contract to receive an initial credit limit.
+
+- **Manage Your Credit**
+
+  Monitor your credit limit and repayment schedule via the Unipay dashboard.
+
+- **Improve Your Credit Score**
+
+  - **Timely Repayments**: Make payments on time to boost your credit score.
+  - **Honest On-Chain Behavior**: Maintain compliant and trustworthy interactions on the blockchain.
+
+- **Unlock Unsecured Credit**
+
+  As your credit score increases, gain access to credit without additional collateral.
+
+## Credit Scoring System
+
+Our credit scoring algorithm considers various factors:
+
+- **On-Chain Activity**: Interaction with mainstream protocols and absence of fraudulent behavior.
+- **ENS Participation**: Engagement with the Ethereum Name Service.
+- **Repayment History**: Track record of timely repayments on your Unipay Card.
+
+This system ensures that only trustworthy users gain higher credit limits and access to unsecured lending.
+
+## Contributing
+
+We welcome contributions from the community. Please open issues and submit pull requests for improvements.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
