@@ -2,7 +2,7 @@
 
 This repository contains the Solana implementation of the **Unipay Card** smart contract. The contract enables users to collateralize SOL to obtain a credit limit, allowing them to open a virtual credit card and add credit for real-world spending.
 
-<img width="1305" alt="Screenshot 2024-09-30 at 11 12 36" src="https://github.com/user-attachments/assets/0e9d5f80-214f-4948-9b83-170f90b9c786">
+<img width="1305" alt="" src="https://github.com/user-attachments/assets/0e9d5f80-214f-4948-9b83-170f90b9c786">
 
 
 ## Overview
